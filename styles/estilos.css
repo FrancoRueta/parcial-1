@@ -1,0 +1,154 @@
+body{
+    background-color:#62C8FF;
+}
+
+.tarjeta-central {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 667px;
+    margin: 6rem auto 8.1rem auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+}
+
+#tarjeta-lado-izquierdo{
+    width: 60%;
+    float:left;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#tarjeta-lado-derecho{
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 40%;
+    float:right;
+    background-color: #FF9662;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.titulo-subtitulo{
+    display:flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-bottom: 8rem;
+}
+
+.titulo-grande{
+    margin-bottom: 0px;
+    margin-left: 1rem;
+    font-size: 46px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subtitulo-mediano{
+    margin-top: 6px;
+    margin-left: 1rem;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.campos-datos-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+}
+
+.usuario{
+    margin-bottom:46px;
+}
+
+
+.contrasenia{
+    margin-bottom: 10rem;
+}
+
+.usuario, .contrasenia{
+    padding: 10px 100px;
+    font-size:20px;
+    font-style: italic;
+    padding-left: 4px;
+    border-radius:18px;
+    background-color:#f3dfc8;
+}
+
+
+
+.olvido-e-iniciar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.olvido-pass{
+    padding-right: 16px;
+    padding-bottom: 12px;
+    
+}
+
+.olvido-pass:hover{
+    color: blue;
+}
+
+.loginbutton {
+    margin-bottom:20px;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:36px;
+	display:inline-block;
+	cursor:pointer;
+	color:#6e3908;
+	font-family:Arial;
+	font-size:50px;
+	font-weight:bold;
+	padding:0px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.loginbutton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.loginbutton:active {
+	position:relative;
+	top:1px;
+}
+
+.imagen-y-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-self: start;
+    height: 80%;
+}
+
+.minis-imagen{
+    width: 200px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.minis-texto{
+    width: 400px;
+}
+
+.poweredby, .telefono{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nombre-y-telefono{
+    display: flex;
+    height: 20%;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
