@@ -2,6 +2,7 @@
 
 const olvidoContrasenia = document.getElementById('olvido-password');
 const botonLogin = document.getElementById("iniciarSesion");
+const creadoPor = document.getElementById("powered-by");
 
 
 //funciones para chequear que el usuario y la contraseña sean validos.

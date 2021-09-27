@@ -144,6 +144,9 @@ body{
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.poweredby{
+    margin-bottom: 1rem;
+}
 
 .nombre-y-telefono{
     display: flex;
