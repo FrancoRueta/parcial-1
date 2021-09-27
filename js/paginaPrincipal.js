@@ -27,3 +27,55 @@ info3.addEventListener("click", (event) => {
     event.preventDefault();
     alert("INFORMACION DE PRODUCTO: \nNOMBRE:Paracetamol pensa \nDESCUENTO DE: 25% \nUBICACION: Farmasol - Ramos Mejia \nVALIDO HASTA: 4/12");
   });
+
+
+//traemos el boton de salida
+const botonSalir = document.getElementById('salir')
+botonSalir.addEventListener("click", (event) => {
+    event.preventDefault();
+    document.location.href = "index.html";
+});
+
+
+//traemos el carrito
+const botonCarrito = document.getElementById('carrito')
+botonCarrito.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("Todavia no ha sido implementado... vuelva mas tarde")
+});
+
+//traemos el filtrar
+const filtrarCarrito = document.getElementById('filtrar')
+filtrarCarrito.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("Todavia no ha sido implementado... vuelva mas tarde")
+});
+
+//traemos el ordenar
+const ordenarCarrito = document.getElementById('ordenar')
+ordenarCarrito.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("Todavia no ha sido implementado... vuelva mas tarde")
+});
+
+
+//traemos el agregar
+const agregarItem1 = document.getElementById('agregar1')
+agregarItem1.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("¡El elemento se añadio al carrito!")
+});
+
+//traemos el agregar
+const agregarItem2 = document.getElementById('agregar2')
+agregarItem2.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("¡El elemento se añadio al carrito!")
+});
+
+//traemos el agregar
+const agregarItem3 = document.getElementById('agregar3')
+agregarItem3.addEventListener("click", (event) => {
+    event.preventDefault();
+    alert("¡El elemento se añadio al carrito!")
+});

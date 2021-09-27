@@ -199,3 +199,17 @@ html, body {
     right: 16px;
     background-color:red;
 }
+
+
+.boton-agregar, .boton-info{
+    background-color:#f3e4cd;
+    border-radius: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.boton-agregar:hover, .boton-info:hover{
+    background-color:#ecd3ae
+}
