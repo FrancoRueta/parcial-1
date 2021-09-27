@@ -1,45 +1,45 @@
 //todos los elementos a traer del DOM.
 
-const olvidoContrasenia = document.getElementById("olvido-password");
-const botonLogin = documnet.getElementById("loginbutton");
+const olvidoContrasenia = document.getElementById('olvido-password');
+const botonLogin = document.getElementById("iniciarSesion");
 
 
-//REGEX numerico.
-const REGEX_COMPROBACION = new RegExp("/^\d+$/");
+//funciones para chequear que el usuario y la contraseña sean validos.
+const usuarioValido = num =>{
+    return !isNaN(num)
+}
 
-
-/*a. que valide mediante javascript solo números en el nombre de usuario (usa tu
-DNI para probar)
-b. que la contraseña tenga al menos 4 caracteres
-c. que tenga un boton de ingresar que redirige al usuario a la “Página principal”*/
+let passValido = (pass) =>{
+    return(pass.length > 3);
+}
 
 
 //click event para olvido contraseña
-olvidoContrasenia.addEventListener("click", () => {
+olvidoContrasenia.addEventListener("click", (event) => {
+    event.preventDefault();
     alert("Que pena...");
   });
 
 
-const inicioDeSesion = () => {
-    let usuario = document.getElementById("usuario");
-    let contrasenia = document.getElementById("password");
-
-    //Si algo esta mal, tiramos alert y retornamos para cortar ejecucion.
-    if(contrasenia.value.length < 5){
-        alert("La contraseña debe ser de por lo menos 4 caracteres. Vuelva a intentar.");
-        return;
-    }
-    if(REGEX_COMPROBACION.test(usuario.value) == false){
-        alert("El usuario debe ser solamente numerico. Vuelva a intentar.")
-        return;
-    }
-
-    document.location.href = "main";
-}
-
-
 
 //click event para validar los datos, y posteriormente acceder a la pagina.
-botonLogin.addEventListener("click", () => {
+botonLogin.addEventListener('click', (event) => {
+    event.preventDefault();
+    let usuario = document.getElementById("usuario").value;
+    let contrasenia = document.getElementById("password").value;
+    console.log(usuario);
+    console.log(contrasenia);
 
-})
+    //Si algo esta mal, tiramos alert y retornamos para cortar ejecucion.
+    if(! usuarioValido(usuario)){
+        alert("ERROR: el usuario es invalido. Chequee que el usuario sea un DNI");
+        return;
+    }
+    if(! passValido(contrasenia)){
+        alert("ERROR:contraseña es invalida. Chequee que la contraseña sea de por lo menos 4 digitos.");
+        return;
+    }
+    document.location.href = "main.html";
+    localStorage.setItem('nombre', usuario);
+    return;
+});
